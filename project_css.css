@@ -1,0 +1,115 @@
+body {background-color: gray;}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0.5%;
+    background-color: #f8f8f8; /* Adjust background if needed */
+    height: 60%;
+}
+
+/* Style for logo */
+.logo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+}
+
+/* Navigation bar */
+.topnav a {
+    text-decoration: none;
+    color: black; 
+    padding: 10px 15px;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.navbar {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar {
+    font-weight: bold;
+}
+
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hs-search-field__input {
+    padding: 10px;
+    width: 500px;
+    margin-right: 10px;
+}
+
+/* When input is clicked it shrinks */
+/* need to fix somehow */
+.hs-search-field__input:focus {
+    width: 150px; 
+    outline: none;
+    padding: px;
+    transition: width 0.5s ease;
+}
+
+.main_content {
+    background: lightgray;
+    padding: 5%;
+    border-radius: 3px;
+    border: 2px solid rgb(12, 14, 12);
+    margin: 15px;
+    min-width: 0;
+}
+
+.footer {
+    background-color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;  
+}
+
+.sidebar {
+    background: lightgray;
+    width: 20%;
+    height: 100%;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid rgb(12, 14, 12);
+    float: right;
+} 
+
+/* map on flighttracker1.html */
+.graph_table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    border: 2px solid black; 
+    padding: 10px;
+    text-align: center;
+}
+
+/* needs fixing need outline graph */
+.graph-table{
+    /* border: 2px solid black;
+    padding: 10px;
+    text-align: center; */
+    border-bottom: 2px solid black;
+    width: 100%;
+
+}
+
+/* Hover effect on map */
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
