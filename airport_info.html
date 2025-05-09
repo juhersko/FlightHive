@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src= "project.js" defer></script> 
+    <link rel="stylesheet" href="project_css.css">
+</head>
+<body>
+        <!-- Header with Logo and Navigation -->
+         <!-- for future: when you click the logo it should go to home page  -->
+        <header class="header">
+            <object data="logo-pdf.pdf" type="application/pdf" class="logo"></object>
+    
+            <nav class="topnav">
+                <ul>
+                    <a href="home.html">Home</a>
+                    <a href="flighttracker1.html" class="active">Flight Tracker</a>
+                    <a href="airport_info.html">Airport Info</a>
+                    <a href="aircraft_specs.html">Aircraft Specs</a>
+                    <a href="about.html">About</a>
+                    <a href="help.html">Help</a>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="search-section">
+                <input type="text" class="hs-search-field__input" placeholder=" 🔍 Search by Flight Number, Airport, or Airline">
+            </section>
+        </main>
+    
+    </body>
+    
+        
+
+        <div class="filters">
+            <select name="sort">
+                <option value="">Sort Results</option>
+                <option value="airline">By Airline</option>
+                <option value="airport">By Airport</option>
+                <option value="status">By Flight Status</option>
+            </select>
+        </div>
+        
+
+
+        <form onsubmit="convert_help(); return false;">
+    
+            <label for="To currency">Choose Airport:</label>
+            <select id="choose_airport" name="choose_airport">
+                
+            </select><br><br>
+    
+            <label for="amount">Number to Convert:</label>
+    
+            <input type = "number" id="amount" name="amount" required><br><br>
+            <input type = "submit">
+    
+        </form>
+    
+        <h1 id = "output">
+            
+        </h1>
